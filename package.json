@@ -1,0 +1,33 @@
+{
+  "name": "gulp-setings",
+  "version": "1.0.0",
+  "description": "Сборка gulp",
+  "main": "undex.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Bugg",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-file-include": "^2.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^3.0.0",
+    "gulp-uglify-es": "^2.0.0"
+  },
+  "dependencies": {
+    "del": "^5.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "siema": "^1.5.1"
+  }
+}

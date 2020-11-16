@@ -1,0 +1,32 @@
+.baner {
+  background-color: #f2f2f2;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  min-height: 542px;
+}
+
+.customize {
+  min-width: 480px;
+  padding: 100px 0;
+  padding-left: 3px;
+  background-image: url(../img/iPhone-5.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  &_title_wrap {
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    &::after,
+    &::before {
+      left: 0;
+    }
+    &::before {
+      left: 22px;
+    }
+  }
+  &_parag {
+    font-size: 18px;
+    color: #999999;
+    line-height: 1.5;
+    max-width: 470px;
+  }
+}

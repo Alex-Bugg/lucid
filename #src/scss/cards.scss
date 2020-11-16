@@ -1,0 +1,100 @@
+.cards {
+  padding: 60px 0;
+  &-title_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-bottom: 70px;
+  }
+  &_wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+  }
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  max-width: 270px;
+  transition: 0.2s;
+  margin: 5px;
+  &:hover .card_btn,
+  &:hover .card_price_wrap,
+  &:hover .card_price,
+  &:hover .card_price-parag{
+    background-color: #44ace1;
+    color: #fff;
+  }
+  &:hover .card_title {
+    color: #44ace1;
+  }
+  &_title {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: 0.2s;
+    text-transform: uppercase;
+  }
+  &_price_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0 40px;
+    transition: 0.2s;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  &_price {
+    font-size: 60px;
+    color: #1a1a1a;
+    transition: 0.2s;
+    display: flex;
+    font-weight: bold;
+    &-parag {
+      font-size: 18px;
+      color: #999999;
+      transition: 0.2s;
+    }
+  }
+  &_descrip {
+    color: #999999;
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 38px;
+    transition: 0.2s;
+  }
+  &_descrip_wrap {
+    padding: 41px 31px 30px 39px;
+    text-align: center;
+  }
+  &_btn {
+    padding: 15px;
+    min-width: 160px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #44ace1;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+    border: 1px solid #e0e0e0;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.dollar {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.lacina {
+  color: #44ace1;
+  &:hover {
+    opacity: 0.8;
+  }
+}

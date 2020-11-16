@@ -1,0 +1,46 @@
+.details {
+  padding-top: 66px;
+  padding-bottom: 66px;
+  &_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    background-image: url(../img/header-phone.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 40%;
+  }
+}
+
+
+.info {
+  padding: 51px 0 160px;
+  margin-left: 50%;
+  max-width: 572px;
+  &_wrap_title {
+    padding-bottom: 29px;
+    margin-bottom: 25px;
+    &::after,
+    &::before {
+      left: 0;
+    }
+    &::before {
+      left: 22px;
+    }
+  }
+  &_parag {
+    font-size: 18px;
+    color: #999999;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  &_merit-item {
+    font-size: 18px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../img/Cup.svg);
+    font-weight: 900;
+  }
+}

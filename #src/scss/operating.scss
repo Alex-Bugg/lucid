@@ -1,0 +1,41 @@
+body {
+  font-family: SourceSansPro;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 12.5px;
+}
+
+.title_section_wrap {
+  position: relative;
+  padding-bottom: 38px;
+  &::after,
+  &::before{
+    content: '';
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    background-color: #008ed6;
+    bottom: 0;
+    right: 50%;
+  }
+  &::before {
+    left: calc(50% - -2px);
+  }
+}
+
+.signature {
+  color: #008ed6;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  margin-bottom: 17px;
+}
+
+.title_section {
+  font-size: 36px;
+  font-weight: 900;
+}

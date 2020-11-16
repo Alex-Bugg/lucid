@@ -1,0 +1,259 @@
+@media(max-width:1100px) {
+  .overview,
+  .pricing,
+  .cards,
+  .contact_us{
+    padding: 20px 0;
+    &-title_section {
+      margin-bottom: 35px;
+    }
+    &-title_wrap {
+      margin-bottom: 35px;
+    }
+  }
+
+  .details {
+    padding: 20px 0;
+  }
+
+  .info {
+    margin-left: 40%;
+  }
+
+  .plans_title_wrap {
+    margin-bottom: 35px;
+  }
+  
+  .contact_us-points_wrap {
+    margin-bottom: 35px;
+  }
+}
+
+@media(max-width:1058px) {
+  .tagline {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .tagline_btn_wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tagline_btn:first-child {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .title_header-paragraph {
+    color: rgba(255,255,255,0.9);
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+  }
+}
+
+@media(max-width:919px) {
+  .customize_title {
+    text-shadow: 1px 1px #fff;
+  }
+
+  .title_header-title,
+  .title_header-paragraph {
+    text-shadow: 1px 1px #000;
+  }
+}
+
+@media(max-width:830px) {
+  .title_header-btn {
+    background-color: #008ed6;
+  }
+}
+
+@media(max-width:800px) {
+  .contact_us-form {
+    padding: 40px;
+    max-width: 380px;
+    margin-bottom: 20px;
+    align-items: center;
+    &_wrap {
+      flex-direction: column;
+      &_inputs {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .map {
+    margin: 0;
+  }
+}
+
+@media(max-width:748px) {
+  .customize {
+    background-position: center center;
+  }
+  .main_footer-svg {
+    fill: #008ed6;
+  }
+}
+
+@media(max-width:600px) {
+  .customize {
+    background-image: none;
+  }
+
+  .tagline {
+    flex-direction: column;
+    &_btn_wrap {
+      flex-direction: row;
+    }
+    &_title {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+    &_btn {
+      background-color: #008ed6;
+      &:first-child {
+        margin-bottom: 0;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .nav {
+    transform: translateY(-1000px);
+    opacity: 0;
+    transition: 0.2s;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    max-width: 250px;
+    & .nav-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+  
+  .nav-list li {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color:rgba(153, 153, 153, 0.8);;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+    & a {
+      color: rgba(255,255,255,0.9);
+      display: block;
+      width: 100%;
+      text-transform: uppercase;
+    }
+    &:first-child {
+      border-radius: 5px 0 0 0 ; 
+    }
+    &:last-child {
+      border-radius: 0 0 0 5px ; 
+    }
+  }
+    .nav-item {
+    padding: 10px;
+  }
+
+  .mobile_btn {
+    position: relative;
+    background-color: transparent;
+    width: 20px;
+    height: 14px;
+    transition: 0.2s;
+    z-index: 10;
+    &::after,
+    &::before {
+      content: '';
+      width: 20px;
+      height: 2px;
+      background:#008ed6;
+      position: absolute;
+      transition: 0.2s;
+      left: 0;
+      bottom: 0;
+    }
+    &::after {
+      top: 0;
+    }
+  }
+
+  .mob_active {
+    &::after,
+    &::before {
+      top: 50%;
+      transform: rotate(-225deg);
+    }
+    &::before {
+      transform: rotate(225deg);
+    }
+  }
+
+  .mobile_btn.mob_active .helper{
+    display: none;
+  }
+
+  .mobile_btn.mob_active + nav{
+    display: block;
+    position: absolute;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .helper {
+    width: 20px;
+    height: 2px;
+    background:#008ed6;
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .title_header {
+    background-position: center 0;
+  }
+
+  .info {
+    margin-left:0;
+  }
+
+  .details_wrap {
+    background-position: bottom;
+  }
+
+  .info_merit-item {
+    text-shadow: 1px 1px rgba(255,255,255,0.6);
+  }
+}
+
+@media(min-width:600px) {
+  .mobile_btn {
+    display: none;
+  }
+}
+
+@media(max-width:550px) {
+  .customize {
+    min-width: unset;
+  }
+
+  .customize_parag {
+    max-width: unset;
+  }
+}
+@media(max-width:400px) {
+  .contact_us-input,
+  .contact_us-textarea {
+    min-width: 250px;
+  }
+}
+
+@media(max-width:355px) {
+  .title_header-btn,
+  .tagline_btn {
+    min-width: 140px;
+  }
+}
